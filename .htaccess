@@ -1,0 +1,14 @@
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+# Activation du module de réécriture d'URL :
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Il prend tout / il le bascule dans dans le $1. Fait la redirection de l'url. Il réécrit l'url. L'url me renvoie juste accueil ou contact.
+
+RewriteRule ^(.*)$ index.php?p=$1 [L,QSA]
+
+# Ne pas oublier de modifier dans Apache le httpd.conf : Allowoverride en all et verif d'enlever le dièse 
+# surLoadModule rewrite_module modules/mod_rewrite.so

@@ -1,0 +1,1120 @@
+/*------------ GRID --------------*/
+
+body{
+
+/* j'enleve toutes mes marges de l'écran*/
+
+margin: 0;
+padding:0;
+
+
+
+
+/* En premier lieu je déclare les éléments qui vont définir mon GRID
+
+/* mise en place de la grille*/
+
+display:grid;
+
+/* modele de grille en colonne*/
+
+grid-template-columns: 4fr ;
+
+/* modele de grille en rangée*/
+
+grid-template-rows:20vw min-content 10vw;
+
+/*modèle de zone*/
+
+grid-template-areas:"h" "m" "f";
+
+}
+
+
+
+
+
+/*----- Disposition des éléments dans le grid ------*/
+
+header{
+
+grid-area:h;
+
+}
+
+main h1{
+  color:red;
+}
+
+main {
+/*border: solid 3vw blue;*/
+padding-left: 
+color:black;
+grid-area:m;
+
+}
+
+footer{
+
+grid-area:f;
+
+}
+
+
+/* ---------- FLEX ---------- */
+
+
+
+
+header nav {
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items:center;
+
+}
+
+/* Pourquoi un flex-grow?*/
+
+header nav a {
+
+	flex-grow: 1;
+
+
+}
+
+
+/*----------ACCUEIL-------*/
+
+
+
+
+
+  
+
+#accueilLastParution h2{
+  position:absolute;
+ 
+  background-color: white;
+ 
+}
+#accueilLastParution img {
+  width:30vw;
+  height: 20vw;
+  /*margin top: 10vw;*/
+  padding-top:6vw;
+
+
+}
+/*
+.imgaccueilLastParution{
+width:20vw;
+height:10vw;
+
+}*/
+
+#accueilLastParution{
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items:center;
+
+ 
+    
+  }
+
+.resultat {
+color:red;
+font-size: 2vw;
+text-align:left;
+width:80vw;
+
+
+}
+/*---------------------AMENAGEMENT-----------------------------*/
+
+/*#amenagement{
+ display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-center;
+    align-content: flex-start;
+
+  }
+*/
+#amenagement h1 {
+
+  padding-left:3vw;
+  color:#91b713;
+}
+
+
+#amenagement{
+
+  background-color:#F8F9F9;
+}
+
+.titleAmenagement {
+
+  font-size:3vw;  
+  text-align: center;
+  padding-bottom:0vw;
+  margin-bottom: 0vw;
+  line-height:0vw;
+
+}
+
+#amenagement h3{
+  font-size:3vw;  
+  text-align: center;
+  line-height: 0vw
+
+}
+
+#amenagement img{
+width:50vw;
+  align-content:center;
+  text-align: center;
+  padding-left:25vw;
+}
+
+#amenagement p {
+  width: 50vw;
+  font-size:2vw;
+  padding-left: 25vw;
+text-align: justify;
+
+}
+
+
+/*----------------------- ACTU ------------------------------*/
+
+#pressActu {
+    
+	display: flex;
+
+	flex-flow: row-wrap;
+
+	justify-content: space-between;
+
+	align-items: flex-start;
+
+}
+
+
+#pressActu > img
+{
+padding-left:0,5vw;
+padding-top:0,8vw;
+padding-right:2vw;
+
+width:25vw;
+
+} 
+
+#pressActu  {
+
+padding:0vw 2vw 2vw 3vw;
+padding-right: 2vw;
+font-size: 2vw;
+color:black;
+float:right;
+text-align: justify;
+
+}
+
+#pressActu  h2 {
+
+  text-aligne:center;
+}
+
+#parution h2{
+text-aligne:center;
+
+}
+.title h2{
+text-aligne:center;
+  
+}
+
+
+
+/*----------------------- ECOLOGIE ------------------------------*/
+
+
+/*#ecologie{
+ display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-center;
+    align-content: flex-start;
+
+  }
+*/
+#ecologie h1{
+
+  padding-left:3vw;
+  color:#91b713;
+}
+
+
+#ecologie{
+
+  background-color:#F8F9F9;
+}
+
+.titleEcologie {
+
+  font-size:3vw;  
+  text-align: center;
+  padding-bottom:0vw;
+  margin-bottom: 0vw;
+  line-height:0vw;
+
+}
+
+#ecologie h3{
+  font-size:3vw;  
+  text-align: center;
+  line-height: 0vw
+
+}
+
+#ecologie img{
+width:50vw;
+  align-content:center;
+  text-align: center;
+  padding-left:25vw;
+}
+
+#ecologie p {
+  width: 50vw;
+  font-size:2vw;
+  padding-left: 25vw;
+text-align: justify;
+
+}
+
+
+
+
+
+
+
+
+
+}
+
+#pressecologie h2 {
+
+  text-aligne:center;
+}
+
+#public-parution-ecologie h2 {
+text-align: center;
+}
+
+#parution h2{
+text-aligne:center;
+
+}
+.title h2 {
+text-aligne:center;
+  
+}
+
+#ecologie h2 {
+
+  font-size:5vw;
+
+}
+
+
+
+
+
+
+
+
+
+/*#galerie {
+
+	display: flex;
+
+	flex-flow: row wrap;
+
+	justify-content: space-around;
+
+	align-items: center;
+
+}*/
+
+/*----- FORMULAIRE DE CONTACT -----*/
+
+/*#contact form {
+
+	display:flex;
+
+	flex-flow: column wrap;
+
+	justify-content: center;
+
+	align-items: center;
+
+}
+
+*/
+
+
+
+
+
+/* ---------- DESIGN ---------- */
+
+
+
+
+
+
+
+
+/*---------------PARUTION ECRITE --------------*/
+
+/* #parution {*/
+
+/*font-size: 2vw;*/
+
+    /*display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-center;
+    align-content: flex-start;*/
+    /*align-items: baseline;*/
+/*
+  }
+
+  #parutiontextarticle{
+
+    font-size:5vw;
+
+  }
+*/
+  /*#parutionimg{
+    width: 20vw;
+}*/
+
+/*#parution {
+    position:;
+    width: 20vw;
+  }*/
+
+
+/*#parution{*/
+   /*position: absolute;*/
+    /*bottom: 0;
+    left: 0;
+    font-size: 2vw;
+    text-align:left;
+    width: 100%;
+    color: white;
+    padding: 1vw 0;
+    background-color: rgba(0,0,0,0.5);*/
+    
+}
+
+#title {
+  color: blue;
+}
+
+/*---------FORM INSERTION ACTU---------------*/
+#FormActu{
+
+  background-color: #39FF14/*#27FF32;*/
+}
+
+
+
+
+#FormActu form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#FormActu select{
+  width: 30vw;
+  border-radius: 0.5vw;
+  border: solid 0.1vw black;
+  margin-bottom: 1vw;
+  padding: 0.5vw 1vw;
+
+}
+
+
+#FormActu input  {
+  width: 30vw;
+  border-radius: 0.5vw;
+  border: solid 0.1vw black;
+  margin-bottom: 1vw;
+  padding: 0.5vw 1vw;
+
+}
+
+#FormActu input[type="textarea"] {
+width: 30vw;
+height:50vw;
+margin:0px;
+padding-top:0px;
+padding-left: 0px;
+
+}
+
+#FormActu section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#FormActu article {
+  border: 0.5vw solid black;
+  width: 20vw;
+  color: black;
+  padding: 1vw;
+}
+#FormActu img {
+  width: 100%;
+}
+
+/*#article a {
+  text-decoration: none;
+}*/
+
+
+
+
+
+
+/*------------FORMULAIRE INSCRIPTION SIGNIN*--------------*/
+#inscription {
+  text-align: center;
+}
+#inscription form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+#inscription input {
+  width: 30vw;
+  border-radius: 0.5vw;
+  border: solid 0.1vw black;
+  margin-bottom: 1vw;
+  padding: 0.5vw 1vw;
+}
+#inscription input[type="radio"] {
+  width: 1vw;
+}
+#inscription input[type="submit"] {
+  width: 10vw;
+}
+
+/*Indique dans les formulaires les messages d'erreurs*/
+.info {
+  color: red;
+  padding: 0.5vw;
+}
+
+#inscription nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#inscription nav a {
+  text-decoration: none;
+  background: black;
+  color: white;
+  padding: 0.5vw 1vw;
+  font-size: 2vw;
+  border-radius: 0.5vw;
+  margin:0 1vw;
+  border: none;
+}
+
+/*--------------FORMULAIRE CONNEXION LOGIN------------*/
+
+#connect {
+  text-align: center;
+}
+#connect form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+#connect input {
+  width: 30vw;
+  border-radius: 0.5vw;
+  border: solid 0.1vw black;
+  margin-bottom: 1vw;
+  padding: 0.5vw 1vw;
+}
+#connect input[type="radio"] {
+  width: 1vw;
+}
+#connect input[type="submit"] {
+  width: 10vw;
+}
+/*---------------------PROFIL---------------------------*/
+#userUpdate{
+display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*--------HEADER -----------------------------*/
+
+#titreheader h1{
+
+	margin:0;
+	font-family: 'Satisfy', cursive;
+	color: #27FF32/*#17E85D*/;
+	font-size: 6.5vw;
+	text-align: center;
+	text-shadow: 1px 1px 1px #FFA620 /*#000000*/;
+	display:flex;
+	flex-direction:column;
+
+}
+
+#soustitreheader h2 {
+
+	margin:0;
+	text-align: center;
+	margin-bottom:1vw;
+	font-family: 'Satisfy', cursive;
+	text-shadow: 1px 1px 1px #FFA620;/*#000000*/
+	color:#27FF32;
+	font-size: 3.5vw;
+	display:flex;
+	flex-direction:column;
+
+	}
+
+/*------------------- NAV -----------------------*/
+header nav {
+  
+  width: 100vw;
+  border-top:solid black;
+
+
+}
+
+header nav a {
+
+  text-align:center;
+
+  
+
+  
+
+  /* Pas de soulignement sous les mots du menu*/ 
+
+  text-decoration:none;
+
+  height:2vw;
+
+  /* Hauteur de la ligne */
+
+  line-height:5vw;
+
+  /* Taille de Police*/
+
+  font-size:2vw;
+
+}
+
+
+
+header nav a:hover {
+color:red;
+}
+
+#menu ul {
+ margin:0;
+ padding:0;
+ list-style-type:none;
+ text-align:right;
+ 
+ 
+ }
+#menu li {
+ float:left;
+ margin:auto;
+ padding:0;
+background-color: white; 
+ }
+#menu li a {
+ display:block;
+ width:100px;
+ color:blue;
+ text-decoration:none;
+ padding:5px;
+/* background-color: green; */
+
+ }
+#menu li a:hover {
+ 
+ }
+
+ #menu ul li ul {
+ display:none;
+ }
+
+ #menu ul li:hover ul {
+ display:block;
+ }
+#menu li:hover ul li {
+ float:none;
+ }
+
+ #menu li ul {
+ position:absolute;
+ }
+
+
+
+
+
+
+
+
+	
+
+}
+
+/*#actu article {
+
+	margin:1vw;
+
+	width: 30%;
+
+	text-align: center;
+
+	padding: 0.5vw;
+
+	
+
+}
+
+#actu article p {
+
+	text-align: left;
+	font-size:2vw;
+
+}
+
+
+
+#actu img{
+
+	width:100%;
+
+}*/
+
+#galerie {
+
+	width: 70%;
+
+	margin: 0 auto;
+
+}
+
+#galerie img {
+
+ 	width: 10vw; 
+
+}
+
+#profil form input, #contact form textarea, aside form input {
+	display:flex;
+
+	width: 10vw;
+
+	margin: 0.5vw 0;
+
+	padding: 0.25vw 0.5vw;
+
+	border-radius: 0.5vw;
+
+	border: 0.1vw solid black;
+
+}
+
+
+#profil {
+text-align: center;
+}
+
+aside form input {
+
+	width: 10vw;
+
+}
+
+#contact form input[type='submit'] {
+
+	width: 10vw;
+
+	cursor: pointer;
+
+} 
+
+
+
+
+
+#connexion  {
+
+	position:absolute;
+
+	top:20px;
+
+	right:20px;
+
+	
+
+}
+
+
+
+
+
+
+
+#content {
+
+	background-color: orange;
+
+  position: absolute;
+
+  height: 50px;
+
+  width: 300px;
+
+  margin-left: 170px;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+}
+
+
+
+#content.on {
+
+  -webkit-animation-name: in-out;
+
+  animation-name: in-out;
+
+  -webkit-animation-duration: 0.7s;
+
+  animation-duration: 0.7s;
+
+  -webkit-animation-timing-function: linear;
+
+  animation-timing-function: linear;
+
+  -webkit-animation-iteration-count: 1;
+
+  animation-iteration-count: 1;
+
+}
+
+
+
+/*input {
+
+  box-sizing: border-box;
+
+  width: 50px;
+
+  height: 50px;
+
+  border: 4px solid #FFFFFF;
+
+  border-radius: 50%;
+
+  background: none;
+
+  color: red;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  font-family: Roboto;
+
+  outline: 0;
+
+  -webkit-transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out, padding 0.2s;
+
+  transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out, padding 0.2s;
+
+  -webkit-transition-delay: 0.4s;
+
+  transition-delay: 0.4s;
+
+  -webkit-transform: translate(-100%, -50%);
+
+  -ms-transform: translate(-100%, -50%);
+
+  transform: translate(-100%, -50%);
+
+}*/
+
+
+
+.search {
+
+  background: none;
+
+  position: absolute;
+
+  top: 0px;
+
+  left: 0;
+
+  height: 50px;
+
+  width: 50px;
+
+  padding: 0;
+
+  border-radius: 100%;
+
+  outline: 0;
+
+  border: 0;
+
+  color: inherit;
+
+  cursor: pointer;
+
+  -webkit-transition: 0.2s ease-in-out;
+
+  transition: 0.2s ease-in-out;
+
+  -webkit-transform: translate(-100%, -50%);
+
+  -ms-transform: translate(-100%, -50%);
+
+  transform: translate(-100%, -50%);
+
+}
+
+
+
+.search:before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 20px;
+
+  height: 4px;
+
+  background-color: #fff;
+
+  -webkit-transform: rotate(45deg);
+
+  -ms-transform: rotate(45deg);
+
+  transform: rotate(45deg);
+
+  margin-top: 26px;
+
+  margin-left: 17px;
+
+  -webkit-transition: 0.2s ease-in-out;
+
+  transition: 0.2s ease-in-out;
+
+}
+
+
+
+.close {
+
+  -webkit-transition: 0.4s ease-in-out;
+
+  transition: 0.4s ease-in-out;
+
+  -webkit-transition-delay: 0.4s;
+
+  transition-delay: 0.4s;
+
+}
+
+
+
+.close:before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 27px;
+
+  height: 4px;
+
+  margin-top: -1px;
+
+  margin-left: -13px;
+
+  background-color: #fff;
+
+  -webkit-transform: rotate(45deg);
+
+  -ms-transform: rotate(45deg);
+
+  transform: rotate(45deg);
+
+  -webkit-transition: 0.2s ease-in-out;
+
+  transition: 0.2s ease-in-out;
+
+}
+
+
+
+.close:after {
+
+  content: "";
+
+  position: absolute;
+
+  width: 27px;
+
+  height: 4px;
+
+  background-color: #fff;
+
+  margin-top: -1px;
+
+  margin-left: -13px;
+
+  cursor: pointer;
+
+  -webkit-transform: rotate(-45deg);
+
+  -ms-transform: rotate(-45deg);
+
+  transform: rotate(-45deg);
+
+}
+
+
+
+.square {
+
+  box-sizing: border-box;
+
+  padding: 0 40px 0 10px;
+
+  width: 300px;
+
+  height: 50px;
+
+  border: 4px solid #FFFFFF;
+
+  border-radius: 0;
+
+  background: none;
+
+  color: #fff;
+
+  font-family: Roboto;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  outline: 0;
+
+  -webkit-transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
+
+  transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out, padding 0.2s;
+
+  -webkit-transition-delay: 0.4s, 0s, 0.4s;
+
+  transition-delay: 0.4s, 0s, 0.4s;
+
+  -webkit-transform: translate(-100%, -50%);
+
+  -ms-transform: translate(-100%, -50%);
+
+  transform: translate(-100%, -50%);
+
+}
+
+
+
+
+
+
+
+/* ---------- MEDIA QUERY ---------- */
+
+@media screen and (max-width: 360px) {
+
+	body {
+
+		grid-template-columns: 1fr;
+
+		grid-template-rows: 15vw 15vw min-content 10vw;
+
+		grid-template-areas: "h" "a" "m" "f";
+
+	}
+
+	aside form {
+
+		flex-flow: row wrap;
+
+		justify-content: flex-end;
+
+		align-items: center;
+
+	}
+
+	aside ul {
+
+		flex-flow: row wrap;
+
+		justify-content: space-around;
+
+	}
+
+	aside form input {
+
+		margin:0 0.5vw;
+
+	}
+
+	#actu article, #galerie {
+
+		width: 100%;
+
+	}
+
+}
+
